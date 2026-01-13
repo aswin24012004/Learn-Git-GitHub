@@ -3,10 +3,306 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn Git</title>
+    <title>ShopHub - Premium Ecommerce Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Welcome to Learn Git</h1>
-    <p>This is a simple webpage to help you learn Git.</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>ShopHub</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#deals">Deals</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#search" class="icon-btn"><i class="fas fa-search"></i></a>
+                    <a href="#cart" class="icon-btn cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                    <a href="#account" class="icon-btn"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Summer Collection 2026</h1>
+            <p>Discover the latest trends and exclusive deals</p>
+            <button class="btn btn-primary">Shop Now</button>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-shopping-bags"></i>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-shirt"></i></div>
+                    <h3>Fashion</h3>
+                    <p>Trendy Clothes & Accessories</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-laptop"></i></div>
+                    <h3>Electronics</h3>
+                    <p>Latest Gadgets & Devices</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-home"></i></div>
+                    <h3>Home & Living</h3>
+                    <p>Furniture & Decor</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-dumbbell"></i></div>
+                    <h3>Sports</h3>
+                    <p>Fitness & Outdoor Gear</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="products-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/250x250?text=Product+1" alt="Product 1">
+                        <span class="badge discount">-20%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Wireless Headphones</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(124 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="original-price">$199.99</span>
+                            <span class="sale-price">$159.99</span>
+                        </div>
+                        <button class="btn btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/250x250?text=Product+2" alt="Product 2">
+                        <span class="badge new">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Stylish Smartwatch</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(89 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="sale-price">$299.99</span>
+                        </div>
+                        <button class="btn btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/250x250?text=Product+3" alt="Product 3">
+                        <span class="badge discount">-30%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Casual Cotton T-Shirt</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(56 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="original-price">$49.99</span>
+                            <span class="sale-price">$34.99</span>
+                        </div>
+                        <button class="btn btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/250x250?text=Product+4" alt="Product 4">
+                        <span class="badge discount">-15%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Portable Phone Charger</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(201 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="original-price">$59.99</span>
+                            <span class="sale-price">$50.99</span>
+                        </div>
+                        <button class="btn btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/250x250?text=Product+5" alt="Product 5">
+                        <span class="badge discount">-25%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Running Shoes</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(178 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="original-price">$129.99</span>
+                            <span class="sale-price">$97.49</span>
+                        </div>
+                        <button class="btn btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/250x250?text=Product+6" alt="Product 6">
+                        <span class="badge new">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Leather Backpack</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(92 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="sale-price">$89.99</span>
+                        </div>
+                        <button class="btn btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Deals Section -->
+    <section class="deals" id="deals">
+        <div class="container">
+            <h2>Limited Time Offers</h2>
+            <div class="deals-grid">
+                <div class="deal-card">
+                    <h3>Flash Sale</h3>
+                    <p class="deal-discount">50% OFF</p>
+                    <p>Selected Electronics</p>
+                    <button class="btn btn-secondary">View Deals</button>
+                </div>
+                <div class="deal-card">
+                    <h3>Bundle Offers</h3>
+                    <p class="deal-discount">Buy 2 Get 1</p>
+                    <p>Fashion & Accessories</p>
+                    <button class="btn btn-secondary">Shop Bundle</button>
+                </div>
+                <div class="deal-card">
+                    <h3>Free Shipping</h3>
+                    <p class="deal-discount">On Orders $50+</p>
+                    <p>No Code Required</p>
+                    <button class="btn btn-secondary">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get exclusive deals and latest updates delivered to your inbox</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About ShopHub</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ShopHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
