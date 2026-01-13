@@ -1,16 +1,16 @@
 /* =============== Root Variables =============== */
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #8b5cf6;
-    --accent-color: #ec4899;
-    --dark-bg: #0f172a;
-    --light-bg: #f1f5f9;
-    --text-dark: #1e293b;
-    --text-light: #64748b;
-    --border-color: #e2e8f0;
-    --success-color: #10b981;
-    --warning-color: #f59e0b;
-    --danger-color: #ef4444;
+    --primary-color: #ff6b35;
+    --secondary-color: #f7931e;
+    --accent-color: #ff4757;
+    --dark-bg: #1a1a1a;
+    --light-bg: #fef5f1;
+    --text-dark: #2d2d2d;
+    --text-light: #666666;
+    --border-color: #ffe5d9;
+    --success-color: #ff8c42;
+    --warning-color: #ffa630;
+    --danger-color: #ff5722;
     --transition: all 0.3s ease;
 }
 
@@ -40,11 +40,11 @@ body {
 
 /* =============== Navigation =============== */
 .navbar {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
     padding: 1rem 0;
 }
 
@@ -149,7 +149,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
     color: white;
     min-height: 500px;
     gap: 3rem;
@@ -219,14 +219,14 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
     color: white;
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
 }
 
 .btn-secondary {
@@ -428,18 +428,18 @@ body {
 }
 
 .deal-card {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
     color: white;
     padding: 2.5rem;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
     transition: var(--transition);
 }
 
 .deal-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 35px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 12px 35px rgba(255, 107, 53, 0.4);
 }
 
 .deal-card h3 {
@@ -462,7 +462,7 @@ body {
 /* =============== Newsletter Section =============== */
 .newsletter {
     padding: 4rem 2rem;
-    background: var(--dark-bg);
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
     color: white;
     text-align: center;
 }
@@ -545,14 +545,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(99, 102, 241, 0.2);
+    background: rgba(255, 107, 53, 0.2);
     border-radius: 50%;
-    color: var(--primary-color);
+    color: #ff6b35;
     margin-bottom: 0;
 }
 
 .social-links a:hover {
-    background: var(--primary-color);
+    background: #ff6b35;
     color: white;
     transform: scale(1.1);
 }
